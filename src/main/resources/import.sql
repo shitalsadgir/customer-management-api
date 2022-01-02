@@ -1,3 +1,6 @@
-insert into customer values ('Shital',24,'chicago','IL',20000.00);
-insert into customer values ('Nilesh',26,'chicago','IL',25000.00);
-insert into customer values ('Pilesh',25,'chicago','IL',23000.00);
+insert into customer ( age, city,  name,  salary,  state) values(333,'chicago','shital',80000.00,'IL');
+insert into customer ( age, city,  name,  salary,  state) values(50,'Texas','Pilesh',50000.00,'IL');
+insert into customer ( age, city,  name,  salary,  state) values(53,'Dallas','Nilesh',66000.00,'IL');
+insert into customer ( age, city,  name,  salary,  state) values(23,'Delhi','Mita',70000.00,'IL');
+insert into customer ( age, city,  name,  salary,  state) values(18,'Delhi','Mita',40000.00,'IL');
+insert into customer ( age, city,  name,  salary,  state) values(43,'Delhi','Mita',90000.00,'IL');
