@@ -1,22 +1,23 @@
 package com.microservice.customermanagementapi.bean;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "customer")
 public class Customer {
     @Id
-    @GeneratedValue
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private Integer age;
     private String city;
     private String state;
     private Double salary;
-    public Customer(){}
+
+    public Customer() {
+    }
+
     public Customer(Integer id, String name, Integer age, String city, String state, Double salary) {
         this.id = id;
         this.name = name;
